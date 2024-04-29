@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My first dynamic Website</title>
+    <title>Titanic Dataset</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 <body>
@@ -15,18 +15,12 @@
         </ul>
     </nav>
     <main>
-        <h1>I have been seen {{ count }} times.</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/de/9/90/Hochschule_für_Wirtschaft_und_Recht_Berlin_logo.svg" alt="HWR Berlin Logo">
-        <p>Check out <a href="https://www.hwr-berlin.de" target="_blank">HWR Berlin</a> for more information.</p>
-        <ul>
-            {% for i in range(1, count+1) %}
-            <li>{{ i }}: Hello {{ name }}!</li>
-            {% endfor %}
-        </ul>
+        <h1>Titanic Dataset</h1>
+        <div>{{ titanic_data|safe }}</div>
+        <img src="{{ image_path }}" alt="Survival Counts by Gender">
     </main>
     <footer>
         <p>Created by Chen Jinlin</p>
     </footer>
 </body>
 </html>
-
