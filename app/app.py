@@ -6,9 +6,8 @@ import matplotlib.pyplot as plt
 from decouple import config
 
 app = Flask(__name__)
-REDIS_HOST = config('REDIS_HOST') 
-REDIS_PASSWORD = config('REDIS_PASSWORD')
-cache = redis.Redis(host=REDIS_HOST, port=6379, password=REDIS_PASSWORD)
+
+cache = redis.Redis(host= 'srv-captain--redis' , port=6379)
 
 
 def get_hit_count():
