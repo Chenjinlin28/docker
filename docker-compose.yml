@@ -13,3 +13,9 @@ services:
       - ./app:/app
     depends_on:
       - redis
+      networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
