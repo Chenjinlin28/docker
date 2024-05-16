@@ -3,3 +3,4 @@ Redis
 python-dotenv
 pandas
 matplotlib
+python-decouple
